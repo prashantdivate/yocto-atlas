@@ -1,10 +1,14 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {lessons} from './src/course.js';
-import {sceneFor,nodeBounds,connectionRoute} from './src/scenes.js';
+import {Scene,sceneFor,nodeBounds,connectionRoute} from './src/scenes.js';
 import {languages,translateLabel} from './src/languages.js';
 import {brandName,navigation,creatorCredit} from './src/app-chrome.js';
 import {authorArticles} from './src/author-articles.js';
+test('Diagrams default to 200 percent zoom without a saved preference',()=>{
+ class UnmountedScene extends Scene {render(){}}
+ assert.equal(new UnmountedScene(null,{id:'default-zoom'}).zoom,2);
+});
 test('Brand and navigation use the requested name and sequence',()=>{
  assert.equal(brandName,'Yocto Atlas');assert.deepEqual(navigation.map(n=>n[0]),['learn','lab','practice','cheats','resources']);assert.equal(navigation[1][2],'Architecture Playground');
  assert.equal(creatorCredit(),'');
