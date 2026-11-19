@@ -16,4 +16,6 @@ test('Public build excludes books, research, credentials and private catalogs',(
  for(const match of html.matchAll(/(?:src|href)="([^"#]+)"/g))assert.ok(existsSync(new URL('./dist/'+match[1],import.meta.url)),match[1]);
  assert.ok(existsSync(new URL('./dist/vendor/lucide/LICENSE',import.meta.url)));
  assert.ok(existsSync(new URL('./dist/.nojekyll',import.meta.url)));
+ assert.match(html,/<link rel="icon"[^>]+href="src\/favicon.svg"/);
+ assert.match(readFileSync(new URL('./dist/src/favicon.svg',import.meta.url),'utf8'),/viewBox="0 0 32 32"/);
 });
