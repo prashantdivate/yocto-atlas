@@ -1,0 +1,10 @@
+.research/
+node_modules/
+*.log
+Resources/
+textbooks/
+dist/
+.vercel/
+.env
+.env.*
+!.env.example
