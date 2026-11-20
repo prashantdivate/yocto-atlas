@@ -1,8 +1,20 @@
+<p align="center">
+  <a href="https://prashantdivate.github.io/yocto-atlas/">
+    <img src="src/favicon.svg" alt="Yocto Atlas logo" width="88" height="88">
+  </a>
+</p>
+
 # Yocto Atlas
 
 An interactive learning platform for Embedded Linux and the Yocto Project, from your first Linux shell to the architecture and maintenance of production devices.
 
 **[Explore Yocto Atlas](https://prashantdivate.github.io/yocto-atlas/)** | **[Report an issue](https://github.com/prashantdivate/yocto-atlas/issues)** | **[Deployment status](https://github.com/prashantdivate/yocto-atlas/actions/workflows/pages.yml)**
+
+## Preview
+
+[![Animated preview of Yocto Atlas lessons and interactive diagrams](docs/assets/yocto-atlas-preview.gif)](https://prashantdivate.github.io/yocto-atlas/)
+
+The preview cycles through captured lesson views. [Open the interactive website](https://prashantdivate.github.io/yocto-atlas/) to explore diagrams, labs and architecture decisions, or [view the static screenshot](docs/assets/yocto-atlas-preview.png).
 
 ## Overview
 
